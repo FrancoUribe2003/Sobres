@@ -14,8 +14,8 @@ export default defineConfig({
       includeAssets: ['favicon.svg', 'pwa-192x192.png', 'pwa-512x512.png', 'maskable-icon-512x512.png'],
       manifest: {
         id: '/',
-        name: 'Gestor de sueldo',
-        short_name: 'Sueldo',
+        name: 'Sobres',
+        short_name: 'Sobres',
         theme_color: '#09090b',
         background_color: '#09090b',
         display: 'standalone',

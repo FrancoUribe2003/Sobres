@@ -1,4 +1,4 @@
-# Logs
+# Logs y Registros de depuracion
 logs
 *.log
 npm-debug.log*
@@ -7,27 +7,39 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
-*.env
+# Dependencias y compilacion
+node_modules/
+dist/
+dist-ssr/
+build/
+*.tsbuildinfo
+
+# Archivos de entorno y secretos (NUNCA deben subirse a Git)
 .env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
 .env.*
+*.env
+*.env.*
 !.env.example
 
-# Editor directories and files
+# Archivos de Editores y Sistema Operativo
 .vscode/*
 !.vscode/extensions.json
-.idea
+!.vscode/launch.json
+!.vscode/tasks.json
+.idea/
 .DS_Store
+Thumbs.db
 *.suo
-*.ntvs*
+.ntvs
 *.njsproj
 *.sln
 *.sw?
 
+# Archivos y carpetas temporales de frameworks/herramientas
+
+.nx/
+.turbo/
+.cache/
+.astro/
+.next/
+.nuxt/
