@@ -13,6 +13,7 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.svg', 'pwa-192x192.png', 'pwa-512x512.png', 'maskable-icon-512x512.png'],
       manifest: {
+        id: '/',
         name: 'Gestor de sueldo',
         short_name: 'Sueldo',
         theme_color: '#09090b',
