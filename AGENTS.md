@@ -78,7 +78,7 @@ PLAN.md
 
 ### Frontend y PWA
 - Prohibido `dangerouslySetInnerHTML`, `eval`, `new Function` y scripts de terceros. El XSS es la amenaza principal porque la sesión vive en el navegador.
-- Content Security Policy estricta en los headers del hosting (`_headers` en Cloudflare Pages o `vercel.json`): `script-src 'self'`, `connect-src` solo al proyecto de Supabase, sin `unsafe-inline` en scripts.
+- Content Security Policy estricta en los headers del hosting (`vercel.json`): `script-src 'self'`, `connect-src` solo al proyecto de Supabase, sin `unsafe-inline` en scripts.
 - Service worker: precachear solo el shell de la app (JS, CSS, íconos). Las llamadas a Supabase (`*.supabase.co`) usan `NetworkOnly`: nunca se cachean respuestas autenticadas.
 - No persistas datos financieros en `localStorage` ni IndexedDB, ni siquiera con la persistencia de TanStack Query, salvo decisión explícita. Si algún día se hace, se limpia al cerrar sesión.
 
