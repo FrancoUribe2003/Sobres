@@ -43,3 +43,5 @@ Thumbs.db
 .astro/
 .next/
 .nuxt/
+# Local Pi runtime state
+.atl/
